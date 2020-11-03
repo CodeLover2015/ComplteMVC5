@@ -17,7 +17,10 @@ namespace Vidly.Controllers
             //return Content("Hello ASP.NET MVC 5!");
             //return HttpNotFound();
             //return new EmptyResult();
-            return RedirectToAction("Index","Home", new {page = 1, sortBy = "name"});
+            //return RedirectToAction("Index","Home", new {page = 1, sortBy = "name"});
+            ViewData["Movie"] = movie;
+            return View();
+            //return View(movie);
         }
 
         public ActionResult Edit(int id)
