@@ -18,7 +18,8 @@ namespace Vidly.Controllers
             //return HttpNotFound();
             //return new EmptyResult();
             //return RedirectToAction("Index","Home", new {page = 1, sortBy = "name"});
-            ViewData["Movie"] = movie;
+            //ViewData["Movie"] = movie;
+            ViewBag.Movie = movie;
             return View();
             //return View(movie);
         }
